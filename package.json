@@ -1,0 +1,11 @@
+{
+    "name": "mean-web-app", "description": "", "version": "0.0.1", "main": "./mean-web-app.js", "author": {
+        "name": "Tucker", "email": "borisblade17@gmail.com"
+    }, "keywords": [], "licenses": {
+        "type": "none"
+    }, "repository": {
+        "type": "git", "url": "git://github.com/YOUR_LOGIN/mean-web-app.git"
+    }, "bugs": {
+        "url": "http://github.com/YOUR_LOGIN/mean-web-app/issues"
+    }
+}
