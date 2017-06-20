@@ -4,7 +4,11 @@
  * and open the template in the editor.
  */
 
-module.exports = {
-    db: 'mongodb://localhost/mean-book',
-    sessionSecret : 'developmentSessionSecret'
+var config = require('./config'),
+        mongoose = require('mongoose');
+
+module.exports = function() {
+    var db = mongoose.connect(config.db);
+    
+    return db;
 };
