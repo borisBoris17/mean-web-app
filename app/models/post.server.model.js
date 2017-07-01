@@ -4,6 +4,9 @@
  * and open the template in the editor.
  */
 
+var mongoose = require('mongoose'),
+        Schema = mongoose.Schema;
+
 var PostSchema = new Schema({
     title: {
         type: String,
@@ -13,8 +16,10 @@ var PostSchema = new Schema({
         type: String,
         required: true
     },
-    author: Schema.ObjectId,
-    ref: 'User'
+    author: {
+        type: Schema.ObjectId,
+        ref: 'User'
+    }
 });
 
 mongoose.model('Post', PostSchema);
