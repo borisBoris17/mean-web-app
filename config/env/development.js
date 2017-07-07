@@ -6,5 +6,10 @@
 
 module.exports = {
     db: 'mongodb://localhost/mean-book',
-    sessionSecret : 'developmentSessionSecret'
+    sessionSecret : 'developmentSessionSecret',
+    facebook: {
+        clientID: '1476947195721882',
+        clientSecret: 'ba8ddfd7bc0a4f8c23bef16bbeb4c336',
+        callbackURL: 'http://localhost:3000/oauth/facebook/callback'
+    }
 };

@@ -32,4 +32,13 @@ module.exports = function(app) {
     app.param('userId', users.userByID);
     
     app.get('/signout', users.signout);
+    
+    app.get('/oauth/facebook', passport.authenticate('facebook', {
+        failureRedirect: '/signin'
+    }));
+    
+    app.get('/oauth/facebook/callback', passport.authenticate('facebook', {
+        failureRedirect: '/signin',
+        successRedirect: '/'
+    }));
 };
